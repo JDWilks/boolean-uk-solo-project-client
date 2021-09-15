@@ -1,0 +1,32 @@
+.header {
+  background-color: black;
+}
+
+.loginHeader {
+  display: grid;
+  grid-template:
+    "logo brandName." auto
+    "logo login." auto/
+    2fr 2fr;
+}
+
+.brandName {
+  grid-area: brandName;
+  color: white;
+  font-family: "Jost", sans-serif;
+  text-align: end;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.logo {
+  grid-area: logo;
+}
+
+.login {
+  grid-area: login;
+  color: white;
+  font-family: "Jost", sans-serif;
+  text-align: end;
+  margin-right: 20px;
+}

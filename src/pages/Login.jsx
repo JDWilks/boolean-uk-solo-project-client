@@ -1,5 +1,19 @@
 import React from "react";
+import DappsCards from "../components/DappsCards";
+import HeaderLogIn from "../components/HeaderLogIn";
+import NewsStream from "../components/NewsFeed";
+import NftCards from "../components/NftCards";
+import "../styles/allPages.css";
 
 export default function Login() {
-  return <h1>Log in page</h1>;
+  return (
+    <>
+      <main className="mainPageStyling">
+        <HeaderLogIn />
+        <DappsCards />
+        <NftCards />
+        <NewsStream />
+      </main>
+    </>
+  );
 }
