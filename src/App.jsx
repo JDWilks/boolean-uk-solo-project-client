@@ -2,6 +2,7 @@ import React from "react";
 import { Switch, Route } from "react-router-dom";
 import Loggedin from "./pages/Loggedin";
 import Login from "./pages/Login";
+import { ModalContainer } from "./pages/ModalsContainer";
 import WantList from "./pages/WantList";
 
 function App() {
@@ -19,15 +20,8 @@ function App() {
         <Route path="/wantlist" exact>
           <WantList />
         </Route>
-
-        {/* 
-        <Route>
-          <LandingPageHeader />
-          <FourOFour />
-        </Route> */}
       </Switch>
-
-      {/* <ModalContainer /> */}
+      <ModalContainer />
     </>
   );
 }

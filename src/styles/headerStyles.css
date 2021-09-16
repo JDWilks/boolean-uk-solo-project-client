@@ -21,6 +21,8 @@
 
 .logo {
   grid-area: logo;
+  height: 93px;
+  margin-left: 15px;
 }
 
 .login {

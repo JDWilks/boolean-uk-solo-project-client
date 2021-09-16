@@ -1,0 +1,43 @@
+.dapps {
+  overflow: scroll;
+}
+
+.dappsCard {
+  width: 200px;
+  height: 108px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.205);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  margin-left: 20%;
+}
+
+.dappsCard:hover {
+  box-shadow: 5px 5px rgba(255, 150, 213, 0.5);
+}
+
+.dappLogo {
+  width: 150px;
+}
+
+.dappsheader {
+  font-family: "Jost", sans-serif;
+  margin-left: 37%;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+
+.bullRunBabesLogoText {
+  font-family: "Pacifico", cursive;
+  color: rgb(231, 125, 143);
+  font-size: 1.5rem;
+}
+
+.artBlockLogoText {
+  font-family: "Kaushan Script", cursive;
+  color: blue;
+  font-size: 1.5rem;
+}
