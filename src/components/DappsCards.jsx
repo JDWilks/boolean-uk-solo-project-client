@@ -18,6 +18,9 @@ import cometh from "../assets/cometh.png";
 import autoglyphs from "../assets/autoglyphs.jpeg";
 import { useStore } from "../hooks/store";
 
+// onClick (line 30) needs to call setmodal but also needs to send the name of the dapp so the correct info can
+// be displayed
+
 export default function DappsCards() {
   const setModal = useStore((store) => store.setModal);
   return (

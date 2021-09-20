@@ -13,7 +13,7 @@
 
 .modal {
   position: relative;
-  background-color: rgba(0, 0, 0, 0.424);
+  background-color: rgba(0, 0, 0, 0.575);
   width: 20%;
   height: 40%;
   display: flex;
@@ -25,10 +25,12 @@
   padding-bottom: 2ch;
 }
 
-.dappLogoFromApi {
-  color: white;
-}
-.dappDescFromApi {
+.dappLogoFromApi,
+.dappDescFromApi,
+.dappLinksFromApi,
+.dappNumOfFromApi,
+.dappBlockChainFromApi,
+.nftModalCopy {
   color: white;
 }
 

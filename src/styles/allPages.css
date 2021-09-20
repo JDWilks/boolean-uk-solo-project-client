@@ -9,9 +9,10 @@
 .mainPageStyling {
   display: grid;
   grid-template:
-    "header header header" 10vh
-    " dapps nfts nfts" 80vh
-    " news news news" 10vh/
+    "header header header" 15vh
+    " dapps nftHeader nftHeader" 5vh
+    " dapps nfts nfts" 75vh
+    " news news news" 5vh/
     1fr 1fr 3fr;
 }
 
@@ -23,11 +24,16 @@
   grid-area: dapps;
 
   border: 1px solid black;
+  background-color: black;
 }
 
 .nfts {
   grid-area: nfts;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+  display: -webkit-inline-box;
+  padding: 10px;
+  overflow: scroll;
+  margin: 10px;
 }
 
 .news {

@@ -8,7 +8,7 @@ export default function HeaderLogIn() {
       <div className="loginHeader">
         <img className="logo" src={nfta} alt="NFTA Logo" />;
         <h1 className="brandName">NFT AGGREGATOR</h1>
-        <h3 className="login">Login</h3>
+        <h3 className="login">Login / SignUp</h3>
       </div>
     </article>
   );

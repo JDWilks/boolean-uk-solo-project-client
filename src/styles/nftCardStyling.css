@@ -1,0 +1,23 @@
+.nftCard {
+  border: 1px solid black;
+  width: 227px;
+  height: 340px;
+  border-radius: 10px;
+}
+
+.nftCard:hover {
+  box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.411);
+}
+
+.nftImage {
+  border-radius: 10px;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.411);
+}
+
+.nftdapp,
+.nftPrice,
+.nftTitle {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  padding: 5px;
+}

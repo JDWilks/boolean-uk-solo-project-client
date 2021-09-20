@@ -1,9 +1,11 @@
 import React from "react";
 import { useStore } from "../hooks/store";
 import DappsModal from "../components/DappsModal";
+import NftModal from "../components/NftModal";
 
 const modals = {
   DappsModal: DappsModal,
+  NftModal: NftModal,
 };
 
 export function ModalContainer() {

@@ -1,0 +1,13 @@
+.nftSearchForm {
+  display: -webkit-inline-box;
+  padding: 3px;
+}
+
+.nftPriceListSearch,
+.nftCreatedListSearch,
+.nftDappListSearch,
+.nftNameSearch {
+  font-family: "Jost", sans-serif;
+  font-size: 1.5rem;
+  margin-left: 10%;
+}
