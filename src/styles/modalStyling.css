@@ -30,7 +30,10 @@
 .dappLinksFromApi,
 .dappNumOfFromApi,
 .dappBlockChainFromApi,
-.nftModalCopy {
+.nftModalCopy,
+.emailfieldlogin__modal,
+.passwordfieldlogin__modal,
+.tcsfieldlogin__modal {
   color: white;
 }
 
@@ -39,4 +42,10 @@
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
 }

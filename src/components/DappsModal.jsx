@@ -31,13 +31,13 @@ export default function DappsModal() {
         <h3 className="dappLinksFromApi">links - loads of them</h3>
         <h4 className="dappNumOfFromApi">Number of nfts: 349876</h4>
         <h5 className="dappBlockChainFromApi">BlockChain: Etherium</h5>
-        <button
+        {/* <button
           onClick={() => {
             getDappResults();
           }}
         >
           Click me Dick Head
-        </button>
+        </button> */}
 
         <span
           className="modalClose"

@@ -1,24 +1,23 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
-import Loggedin from "./pages/Loggedin";
+
 import Login from "./pages/Login";
 import { ModalContainer } from "./pages/ModalsContainer";
-import WantList from "./pages/WantList";
+import Trade from "./pages/Trade";
+import Admin from "./pages/Admin";
 
 function App() {
   return (
     <>
       <Switch>
-        <Route path="/login" exact>
+        <Route path="/" exact>
           <Login />
         </Route>
-
-        <Route path="/loggedin" exact>
-          <Loggedin />
+        <Route path="/trade" exact>
+          <Trade />
         </Route>
-
-        <Route path="/wantlist" exact>
-          <WantList />
+        <Route path="/admin" exact>
+          <Admin />
         </Route>
       </Switch>
       <ModalContainer />

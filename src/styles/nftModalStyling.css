@@ -1,0 +1,47 @@
+/* below fucks up all modals */
+
+/* .modal {
+  display: table;
+} */
+
+.nftArtModal {
+  border: 1px solid black;
+  width: 80vw;
+  height: 80vh;
+  border-radius: 10px;
+  background-color: white;
+  padding: 35px;
+  display: grid;
+  grid-template:
+    "artInfo buyInfo" 80vh
+    "adminbuttons adminbuttons" 20vh/
+    1fr 1fr;
+}
+
+.artInfo {
+  grid-area: artInfo;
+}
+.buyInfo {
+  grid-area: buyInfo;
+}
+.adminbuttons {
+  grid-area: adminbuttons;
+  height: 40px;
+}
+
+.nftImageLarge {
+  border-radius: 10px;
+  box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.411);
+  width: 500px;
+}
+
+.nftArtModalCopy {
+  font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  padding: 5px;
+  /* color: black; */
+}
+
+.adminbuttons {
+  display: flex;
+}

@@ -1,0 +1,10 @@
+.footerCopy {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
+}
+
+.footer__copy {
+  font-size: 1rem;
+}

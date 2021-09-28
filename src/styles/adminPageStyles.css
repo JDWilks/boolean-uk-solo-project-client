@@ -1,0 +1,6 @@
+.adminButtons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
+  margin-top: 50px;
+}

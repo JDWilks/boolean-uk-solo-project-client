@@ -1,0 +1,41 @@
+.table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  height: 50px;
+}
+
+th,
+td {
+  background-color: lightgray;
+}
+
+.totalBlanks {
+  background-color: white;
+}
+
+.totalPrice {
+  background-color: lightgreen;
+}
+
+th {
+  text-align: left;
+  background-color: lightgreen;
+}
+
+.tradeSelButton {
+  width: 50px;
+  background-color: lightgreen;
+}
+
+.tradeSelButton:hover {
+  background-color: rgba(255, 0, 0, 0.507);
+}

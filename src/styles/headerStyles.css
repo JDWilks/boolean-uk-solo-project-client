@@ -3,32 +3,29 @@
 }
 
 .loginHeader {
-  display: grid;
-  grid-template:
-    "logo brandName." auto
-    "logo login." auto/
-    2fr 2fr;
-}
-
-.brandName {
-  grid-area: brandName;
   color: white;
-  font-family: "Jost", sans-serif;
-  text-align: end;
-  margin-right: 50px;
-  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
 }
 
-.logo {
-  grid-area: logo;
-  height: 140px;
-  margin-left: 70px;
+.header__copy {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
+}
+
+.adminHeaderCopy {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
 }
 
 .login {
-  grid-area: login;
   color: white;
-  font-family: "Jost", sans-serif;
-  text-align: end;
-  margin-right: 50px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
 }
