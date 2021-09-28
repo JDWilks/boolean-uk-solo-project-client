@@ -36,12 +36,57 @@
 }
 
 .nftArtModalCopy {
-  font-family: "Jost", sans-serif;
+  /* font-family: "Jost", sans-serif; */
   font-size: 1rem;
   padding: 5px;
   /* color: black; */
+  margin-top: 20px;
 }
 
 .adminbuttons {
   display: flex;
+  justify-content: space-evenly;
+  padding: 8px;
+  margin-top: 50px;
+}
+
+.namefieldloginBuy__modal,
+.lastNamefieldloginBuy__modal,
+.emailfieldloginBuy__modal,
+.walletAddressfieldloginBuy__modal {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.buyInput {
+  width: 65%;
+}
+
+.youAreSendingCopy {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.etheriumAddress {
+  font-weight: 900;
+}
+.checkYourInfoCopy {
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.checkYourInfoCopy2 {
+  font-size: smaller;
+}
+
+.purchaseCheckButton {
+  margin-top: 30px;
+}
+
+.createNftButton,
+.updateNftbutton,
+.deleteNftbutton {
+  background-color: red;
+  color: white;
 }

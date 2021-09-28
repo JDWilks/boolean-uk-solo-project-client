@@ -10,6 +10,7 @@ export default function LoginModal() {
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [walledAddress, setwalledAddress] = useState("");
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -17,7 +18,7 @@ export default function LoginModal() {
   }
 
   function createUser() {
-    fetch("http://localhost:3030/user", {
+    fetch(`${apiUrl}/user`, {
       // Adding method type
       method: "POST",
       // Adding headers to the request

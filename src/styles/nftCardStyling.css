@@ -7,7 +7,8 @@
 }
 
 .nftCard:hover {
-  box-shadow: 3px 6px 5px rgba(0, 0, 0, 0.411);
+  /* box-shadow: 2px 2px lightpink; */
+  background-color: rgba(250, 218, 221);
 }
 
 .nftImage {
@@ -15,13 +16,18 @@
   box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.411);
 
   width: 300px;
-  margin-left: 24px;
+  /* margin-left: 24px; */
   margin-top: 20px;
 }
 
 .nftTitle,
 .nftPrice {
-  font-family: "Jost", sans-serif;
+  /* font-family: "Jost", sans-serif; */
   font-size: 1rem;
   padding: 5px;
+}
+
+.buyButton {
+  margin-top: 20px;
+  cursor: pointer;
 }

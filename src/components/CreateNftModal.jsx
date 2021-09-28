@@ -9,9 +9,10 @@ export default function CreateNftModal() {
   const [artWorkDescription, setArtWorkDescription] = useState("");
   const [artWorkUrl, setArtWorkUrl] = useState("");
   const [artWorkUuId, setArtWorkUuId] = useState("");
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   function createNft() {
-    fetch("http://localhost:3030/nftArt", {
+    fetch(`${apiUrl}/nftArt`, {
       // Adding method type
       method: "POST",
       // Adding headers to the request
@@ -45,7 +46,9 @@ export default function CreateNftModal() {
   return (
     <div className="modal-bg">
       <form className="modal" onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
+        <label className="createNftModalCopy" htmlFor="name">
+          Name:
+        </label>
 
         <input
           type="text"
@@ -55,7 +58,9 @@ export default function CreateNftModal() {
           onChange={(e) => setArtWorkName(e.target.value)}
         />
 
-        <label htmlFor="price">Price:</label>
+        <label className="createNftModalCopy" htmlFor="price">
+          Price:
+        </label>
 
         <input
           type="text"
@@ -65,7 +70,9 @@ export default function CreateNftModal() {
           onChange={(e) => setArtWorkPrice(e.target.value)}
         />
 
-        <label htmlFor="description">Decription:</label>
+        <label className="createNftModalCopy" htmlFor="description">
+          Decription:
+        </label>
 
         <input
           type="text"
@@ -75,7 +82,9 @@ export default function CreateNftModal() {
           onChange={(e) => setArtWorkDescription(e.target.value)}
         />
 
-        <label htmlFor="url">Artwork Url:</label>
+        <label className="createNftModalCopy" htmlFor="url">
+          Artwork Url:
+        </label>
 
         <input
           type="text"
@@ -85,7 +94,9 @@ export default function CreateNftModal() {
           onChange={(e) => setArtWorkUrl(e.target.value)}
         />
 
-        <label htmlFor="nftUuId">NFT Unique Id:</label>
+        <label className="createNftModalCopy" htmlFor="nftUuId">
+          NFT Unique Id:
+        </label>
 
         <input
           type="text"

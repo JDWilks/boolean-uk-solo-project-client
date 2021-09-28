@@ -36,6 +36,7 @@ export default function NftCards({
         <h3 className="nftPrice">Price (Etherium): {price}</h3>
         <h3 className="nftPrice">Description : {description}</h3>
         <button
+          className="buyButton"
           onClick={() => {
             setModal("NftModal");
           }}

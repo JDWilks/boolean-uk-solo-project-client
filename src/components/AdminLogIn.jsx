@@ -5,15 +5,15 @@ import "../styles/adminPageStyles.css";
 function AdminLogIn() {
   const setModal = useStore((store) => store.setModal);
 
-  function getAllNfts() {
-    fetch("http://localhost:3030/nftArt")
-      .then((res) => res.json())
-      .then((data) => {
-        // const fetchResults = JSON.parse(data.contents);
-        console.log("fetchResults", data);
-      })
-      .catch((error) => console.error("FETCH ERROR:", error));
-  }
+  // function getAllNfts() {
+  //   fetch("http://localhost:3030/nftArt")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       // const fetchResults = JSON.parse(data.contents);
+  //       console.log("fetchResults", data);
+  //     })
+  //     .catch((error) => console.error("FETCH ERROR:", error));
+  // }
 
   return (
     <>

@@ -6,14 +6,17 @@
   color: white;
   display: flex;
   justify-content: space-evenly;
-  padding: 8px;
+
+  /* margin-top: 40px; */
+  /* border-bottom: 1px solid white; */
+  padding: 30px;
 }
 
 .header__copy {
   color: white;
   display: flex;
   justify-content: space-evenly;
-  padding: 8px;
+  /* padding: 8px; */
 }
 
 .adminHeaderCopy {
@@ -27,5 +30,28 @@
   color: white;
   display: flex;
   justify-content: space-evenly;
-  padding: 8px;
+  /* padding: 8px; */
+  /* margin-right: 161px; */
+}
+
+.loginHeaderButton {
+  cursor: pointer;
+}
+
+/* header font styling */
+
+.jdw__collect {
+  color: lightpink;
+}
+
+.blockchain {
+  color: lightskyblue;
+}
+
+.header__copy {
+  color: lightgreen;
+}
+
+.loginHeaderButton {
+  color: lightcoral;
 }

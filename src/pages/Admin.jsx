@@ -6,9 +6,10 @@ import NftCard from "../components/NftCard";
 export default function AdminPage() {
   const [allNfts, setAllNfts] = useState([]);
   console.log("allNfts state", allNfts);
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   function getAllNfts() {
-    fetch("http://localhost:3030/nftArt")
+    fetch(`${apiUrl}/nftArt`)
       .then((res) => res.json())
       .then((allNfts) => setAllNfts(allNfts))
       .catch((error) => console.error("FETCH ERROR:", error));

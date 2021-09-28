@@ -10,6 +10,7 @@ export default function AmendNftModal() {
   const [artWorkDescription, setArtWorkDescription] = useState("");
   const [artWorkUrl, setArtWorkUrl] = useState("");
   // const [artWorkUuId, setArtWorkUuId] = useState("");
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   console.log("currentNft...", currentNft);
 
@@ -20,7 +21,7 @@ export default function AmendNftModal() {
   }, [currentNft.url]);
 
   function amendNft() {
-    fetch(`http://localhost:3030/nftArt/${currentNft.id}`, {
+    fetch(`${apiUrl}/nftArt/${currentNft.id}`, {
       // Adding method type
       method: "PATCH",
       // Adding body or contents to send (artWorkName etc are taken directly from state)
@@ -53,7 +54,9 @@ export default function AmendNftModal() {
   return (
     <div className="modal-bg">
       <form className="modal" onSubmit={handleSubmit}>
-        <label for="name">Name:</label>
+        <label className="ammendModalCopy" for="name">
+          Name:
+        </label>
 
         <input
           type="text"
@@ -63,7 +66,9 @@ export default function AmendNftModal() {
           onChange={(e) => setArtWorkName(e.target.value)}
         />
 
-        <label for="price">Price:</label>
+        <label className="ammendModalCopy" for="price">
+          Price:
+        </label>
 
         <input
           type="text"
@@ -73,7 +78,9 @@ export default function AmendNftModal() {
           onChange={(e) => setArtWorkPrice(e.target.value)}
         />
 
-        <label for="description">Decription:</label>
+        <label className="ammendModalCopy" for="description">
+          Decription:
+        </label>
 
         <input
           type="text"
@@ -83,7 +90,9 @@ export default function AmendNftModal() {
           onChange={(e) => setArtWorkDescription(e.target.value)}
         />
 
-        <label for="url">Artwork Url:</label>
+        <label className="ammendModalCopy" for="url">
+          Artwork Url:
+        </label>
 
         <input
           type="text"
@@ -95,7 +104,9 @@ export default function AmendNftModal() {
 
         {/* i can't change this image url now ?  */}
 
-        <label for="nftUuId">Unique ID:</label>
+        <label className="ammendModalCopy" for="nftUuId">
+          Unique ID:
+        </label>
         <input
           type="text"
           id="nftUuId"

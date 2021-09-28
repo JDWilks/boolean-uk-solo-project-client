@@ -1,10 +1,36 @@
 .footerCopy {
-  color: white;
+  /* color: lightcoral; */
   display: flex;
   justify-content: space-evenly;
   padding: 8px;
+  margin-top: 10px;
+  /* border-top: 1px solid white; */
+  /* padding: 30px; */
 }
 
 .footer__copy {
   font-size: 1rem;
+  margin-top: 14px;
+}
+
+.contactAndIcons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.socialIcons {
+  height: 40px;
+  margin-left: 10px;
+}
+
+.infoOnArtist {
+  color: lightpink;
+}
+
+.infoOnNfts {
+  color: lightskyblue;
+}
+
+.contactCopy {
+  color: lightgreen;
 }

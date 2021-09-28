@@ -2,7 +2,7 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 table,
@@ -15,11 +15,12 @@ td {
 
 th,
 td {
-  background-color: lightgray;
+  /* background-color: lightgray; */
+  background-color: white;
 }
 
 .totalBlanks {
-  background-color: white;
+  background-color: black;
 }
 
 .totalPrice {
@@ -38,4 +39,15 @@ th {
 
 .tradeSelButton:hover {
   background-color: rgba(255, 0, 0, 0.507);
+}
+
+.totalTradeTable {
+  background-color: black;
+  height: 100vh;
+}
+
+.whoBuyNfts {
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }

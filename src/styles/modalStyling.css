@@ -33,6 +33,8 @@
 .nftModalCopy,
 .emailfieldlogin__modal,
 .passwordfieldlogin__modal,
+.walletAddresslogin__modal,
+.namefieldlogin__modal,
 .tcsfieldlogin__modal {
   color: white;
 }
@@ -48,4 +50,19 @@
 .animate {
   -webkit-animation: animatezoom 0.6s;
   animation: animatezoom 0.6s;
+}
+
+.createNftModalCopy,
+.ammendModalCopy {
+  color: white;
+}
+
+.purchaseNowButton {
+  width: 150px;
+  padding: 10px;
+}
+
+.purchaseNowButton:hover {
+  background-color: red;
+  color: white;
 }

@@ -17,12 +17,12 @@ export default function HeaderLogIn() {
           className="Jdw__login"
         >
           Hello &nbsp;
-          {!currentUser ? "Please login" : currentUser.firstName}
+          {!currentUser.firstName ? "Please login" : currentUser.firstName}
         </h3>
       </div>
       <div>
         <h1 className="adminHeaderCopy">
-          ammend your site below or from the home page when logged in
+          View trade transactions for your NFT's
         </h1>
       </div>
     </article>
