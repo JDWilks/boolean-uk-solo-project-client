@@ -38,10 +38,18 @@ export default function CreateNftModal() {
       .catch((error) => console.log("Frontend error", error));
   }
 
+  function getAllNfts() {
+    fetch(`${apiUrl}/nftArt`)
+      .then((res) => res.json())
+      // .then((allNfts) => setAllNfts(allNfts))
+      .catch((error) => console.error("FETCH ERROR:", error));
+  }
+
   // handle submit triggered on submitting the form
   function handleSubmit(e) {
     e.preventDefault();
     createNft();
+    getAllNfts();
     setModal("");
   }
 
