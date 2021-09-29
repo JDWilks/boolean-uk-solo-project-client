@@ -60,7 +60,7 @@ export default function NftModal() {
       .then((data) => {
         if (data.msg) {
           alert(
-            "The NFT has already been sold - please try another - NFT's are uploaded weekly"
+            "Sorry we've checked the blockchain and this NFT has already been sold - please try another - this payment will not be processed - new NFT's are uploaded weekly"
           );
         } else {
           console.log(data);
