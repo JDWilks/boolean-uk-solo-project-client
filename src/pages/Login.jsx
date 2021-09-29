@@ -7,11 +7,12 @@ import "../styles/allPages.css";
 export default function Login() {
   const [allNfts, setAllNfts] = useState([]);
   console.log("allNfts state", allNfts);
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   // get all nfts which stores them in state
 
   function getAllNfts() {
-    fetch("http://localhost:3030/nftArt")
+    fetch(`${apiUrl}/nftArt`)
       .then((res) => res.json())
       .then((allNfts) => setAllNfts(allNfts))
       .catch((error) => console.error("FETCH ERROR:", error));
