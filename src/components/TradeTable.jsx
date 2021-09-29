@@ -68,7 +68,7 @@ function TradeTable() {
         </table>
       )}
       <Link to="/">
-        <p>Back to Main Page</p>
+        <p className="backHomeTrade">Back to Main Page</p>
       </Link>
     </div>
   );
