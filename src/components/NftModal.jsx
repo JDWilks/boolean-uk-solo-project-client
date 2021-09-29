@@ -185,8 +185,8 @@ export default function NftModal() {
                   delete nft
                 </button>
 
-                <Link to="/trades">
-                  <p>Click to View Trades Table</p>
+                <Link to="/trade">
+                  <p>Trades Table</p>
                 </Link>
               </div>
             )}
