@@ -4,13 +4,14 @@ import { useStore } from "../hooks/store";
 
 export default function DappsModal() {
   const setModal = useStore((store) => store.setModal);
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   // need to make a fetch request (get) from the database
   // needs to have all the data from dapps model PLUS the relationship links in the social model
   // i can then dynamically put that info in the below modal
 
   function getDappResults() {
-    fetch("http://localhost:3030/dapps")
+    fetch(`${apiUrl}/dapps`)
       .then((res) => res.json())
       .then((data) => {
         const fetchResults = JSON.parse(data.contents);
@@ -21,6 +22,7 @@ export default function DappsModal() {
 
   useEffect(() => {
     getDappResults();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
