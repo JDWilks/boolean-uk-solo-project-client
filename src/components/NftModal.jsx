@@ -15,6 +15,8 @@ export default function NftModal() {
 
   const apiUrl = process.env.REACT_APP_API_URL;
 
+  // ask Nathan about the below
+
   useEffect(() => {
     setFirstName(currentUser.firstName);
     setLastName(currentUser.lastName);
@@ -22,7 +24,7 @@ export default function NftModal() {
     setWallet(currentUser.walledAddress);
   }, []);
 
-  // on submitting form fetch is triggered
+  // on submitting form fetch is triggered in the handlesubmit (work around now works on the button)
 
   function handleSubmit() {
     // e.preventDefault();
@@ -31,31 +33,7 @@ export default function NftModal() {
     console.log("handle submit");
   }
 
-  // fetch post function to create trade table
-
-  // function createTrade() {
-  //   fetch(`${apiUrl}/trade`, {
-  //     // Adding method type
-  //     method: "POST",
-  //     // Adding headers to the request
-  //     headers: {
-  //       "Content-Type": "application/json",
-  //       Accept: "application/json",
-  //     },
-  //     // Adding body or contents to send (taken directly from zustand state)
-  //     body: JSON.stringify({
-  //       userId: currentUser.id,
-  //       nftId: currentNft.nftUuId,
-  //       purchasePrice: currentNft.price,
-  //       type: "BUY",
-  //     }),
-  //   })
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       console.log("tradedata", data);
-  //     })
-  //     .catch((error) => console.error("FETCH ERROR:", error));
-  // }
+  // fetch post function to create trade table which is called in the handle submit
 
   function createTrade() {
     fetch(`${apiUrl}/trade`, {
@@ -66,7 +44,7 @@ export default function NftModal() {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
-      // Adding body or contents to send (taken directly from zustand state)
+      // Adding body or contents to send to backend (taken directly from zustand state)
       body: JSON.stringify({
         userId: currentUser.id,
         nftId: currentNft.nftUuId,
@@ -103,6 +81,7 @@ export default function NftModal() {
     <form className="modal-bg">
       <div className="modal">
         <div className="nftArtModal">
+          {/* displays left hand info on the nft - all info taken from state as we set it in the card and we take from zustand */}
           <div className="artInfo">
             <img
               className="nftImageLarge"
@@ -117,8 +96,8 @@ export default function NftModal() {
               Description: {currentNft.description}
             </h1>
           </div>
+          {/* displays all the users logged in info so the form is prepopulated with users info to buy */}
           <div className="buyInfo">
-            {/* <form className="buyArtWorkForm" onSubmit={handleSubmit}> */}
             <h5 className="namefieldloginBuy__modal">First Name</h5>
             <input
               className="buyInput"
@@ -163,16 +142,19 @@ export default function NftModal() {
               ...this is the blockchain & you are your own bank!
             </p>
 
-            {/* this just needs to not show unless you are logged in - don't care who */}
+            {/* purchase button only shows when logged in otherwise prompted to login */}
             <div className="purchaseCheckButton">
               {!currentUser.firstName ? (
-                "Please login"
+                "Please login to purchase NFT's"
               ) : (
                 <button className="purchaseNowButton" onClick={handleSubmit}>
                   Purchase Now
                 </button>
               )}
             </div>
+            {/* admin buttons to create update delete only show when admin is logged in */}
+            {/* create and update buttons trigger modals - should be components within this modal */}
+            {/* delete triggers the delete function above */}
             {currentUser.email === "admin@admin.com" && (
               <div className="adminbuttons">
                 <p>Hi Admin - your ammend tools are...</p>
@@ -204,8 +186,6 @@ export default function NftModal() {
               </div>
             )}
           </div>
-
-          {/* this needs to only show if a certain user is logged in */}
         </div>
       </div>
 

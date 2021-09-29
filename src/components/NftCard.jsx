@@ -2,7 +2,7 @@ import React from "react";
 import "../styles/nftCardStyling.css";
 import { useStore } from "../hooks/store";
 
-//card component receives the props so can use them
+//card component receives the props so can use them from login.jsx
 export default function NftCards({
   nftid,
   name,
@@ -16,7 +16,7 @@ export default function NftCards({
   console.log("nftid...", nftid);
   return (
     <article className="nfts">
-      {/* on clicking a nft card that info is stored in zustand state to use  */}
+      {/* on clicking a nft card that info is stored in zustand state to use with all the nft info  */}
       <div
         className="nftCard"
         onClick={() => {
@@ -35,6 +35,7 @@ export default function NftCards({
         <h2 className="nftTitle">Title: {name}</h2>
         <h3 className="nftPrice">Price (Etherium): {price}</h3>
         <h3 className="nftPrice">Description : {description}</h3>
+        {/* on clicking buy button / or card launches the nftModal */}
         <button
           className="buyButton"
           onClick={() => {

@@ -11,6 +11,7 @@ export default function CreateNftModal() {
   const [artWorkUuId, setArtWorkUuId] = useState("");
   const apiUrl = process.env.REACT_APP_API_URL;
 
+  // create nft function sending info to the backend
   function createNft() {
     fetch(`${apiUrl}/nftArt`, {
       // Adding method type
@@ -37,6 +38,7 @@ export default function CreateNftModal() {
       .catch((error) => console.log("Frontend error", error));
   }
 
+  // handle submit triggered on submitting the form
   function handleSubmit(e) {
     e.preventDefault();
     createNft();
@@ -49,7 +51,7 @@ export default function CreateNftModal() {
         <label className="createNftModalCopy" htmlFor="name">
           Name:
         </label>
-
+        {/* inputs are prepopulated with the artwork name  */}
         <input
           type="text"
           id="name"

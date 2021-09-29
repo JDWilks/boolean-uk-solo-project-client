@@ -17,7 +17,7 @@ export default function Login() {
       .catch((error) => console.error("FETCH ERROR:", error));
   }
 
-  // use effect runs once when loading the page
+  // use effect runs once when loading the page so all nft's are loaded immediately
 
   useEffect(() => {
     getAllNfts();
@@ -26,7 +26,9 @@ export default function Login() {
   return (
     <>
       <main className="mainPageStyling">
+        {/* header log in component */}
         <HeaderLogInMain />
+        {/* mapping through allNfts (stored in state from above fetch) and for each nft in database render nftCard */}
         <div className="nfts">
           {allNfts.map((nft) => (
             // props are added to the card component
@@ -39,10 +41,6 @@ export default function Login() {
               url={nft.url}
             />
           ))}
-
-          {/* {allNfts.forEach((nft) => {
-            console.log("nft .... ", nft);
-          })} */}
         </div>
         <JdwFooter />
       </main>
@@ -84,3 +82,7 @@ export default function Login() {
 //       </div> */}
 
 //       {/* need to add props in nft card   */}
+
+/* {allNfts.forEach((nft) => {
+            console.log("nft .... ", nft);
+          })} */
