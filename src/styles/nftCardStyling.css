@@ -20,6 +20,10 @@
   margin-top: 20px;
 }
 
+.nftTitle {
+  margin-top: 15px;
+}
+
 .nftTitle,
 .nftPrice {
   /* font-family: "Jost", sans-serif; */
