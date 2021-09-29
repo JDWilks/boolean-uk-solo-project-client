@@ -1,7 +1,7 @@
 import "../styles/nftModalStyling.css";
 import { useStore } from "../hooks/store";
 import { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function NftModal() {
   const setModal = useStore((store) => store.setModal);
@@ -184,6 +184,10 @@ export default function NftModal() {
                 >
                   delete nft
                 </button>
+
+                <Link to="/trades">
+                  <p>Click to View Trades Table</p>
+                </Link>
               </div>
             )}
           </div>
