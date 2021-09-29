@@ -20,6 +20,7 @@ function TradeTable() {
         setTotalPrice(total);
       })
       .catch((error) => console.error("FETCH ERROR:", error));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   let date = new Date().getDate();
@@ -29,7 +30,7 @@ function TradeTable() {
       {currentUser.email === "admin@admin.com" && (
         <table className="table">
           <caption className="whoBuyNfts">
-            who bought my nfts and how much etherium i have today: {Date()}
+            who bought my nfts and how much etherium i have today: {date}
           </caption>
           <tr className="tradeTableFields">
             <th>Nft Name</th>

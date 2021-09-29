@@ -22,6 +22,7 @@ export default function NftModal() {
     setLastName(currentUser.lastName);
     setEmail(currentUser.email);
     setWallet(currentUser.walledAddress);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   // on submitting form fetch is triggered in the handlesubmit (work around now works on the button)

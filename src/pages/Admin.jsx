@@ -17,6 +17,7 @@ export default function AdminPage() {
 
   useEffect(() => {
     getAllNfts();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <>
