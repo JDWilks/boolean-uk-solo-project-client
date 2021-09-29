@@ -185,7 +185,12 @@ export default function NftModal() {
                   delete nft
                 </button>
 
-                <Link to="/trade">
+                <Link
+                  onClick={() => {
+                    setModal("");
+                  }}
+                  to="/trade"
+                >
                   <p>Trades Table</p>
                 </Link>
               </div>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "../styles/tradeTable.css";
 import { useStore } from "../hooks/store";
+import { Link } from "react-router-dom";
 
 function TradeTable() {
   const currentUser = useStore((store) => store.currentUser);
@@ -66,6 +67,9 @@ function TradeTable() {
           </tr>
         </table>
       )}
+      <Link to="/">
+        <p>Back to Main Page</p>
+      </Link>
     </div>
   );
 }
