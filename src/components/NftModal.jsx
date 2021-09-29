@@ -32,6 +32,9 @@ export default function NftModal() {
     createTrade();
     setModal("");
     console.log("handle submit");
+    alert(
+      "Congratulations, check your email for confirmation, the Etherium blockchain can take a while to process the payment"
+    );
   }
 
   // fetch post function to create trade table which is called in the handle submit
