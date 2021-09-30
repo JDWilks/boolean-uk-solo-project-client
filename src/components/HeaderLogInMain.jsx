@@ -5,6 +5,8 @@ import { useStore } from "../hooks/store";
 export default function HeaderLogInMain() {
   const setModal = useStore((store) => store.setModal);
   const currentUser = useStore((store) => store.currentUser);
+  const setCurrentUser = useStore((store) => store.setCurrentUser);
+
   return (
     <article className="header">
       <div className="loginHeader">
@@ -19,6 +21,14 @@ export default function HeaderLogInMain() {
         >
           Hello &nbsp;
           {!currentUser.firstName ? "Please login" : currentUser.firstName}
+        </p>
+        <p
+          className="logoutheader"
+          onClick={() => {
+            setCurrentUser({});
+          }}
+        >
+          {currentUser.firstName ? "LogOut" : ""}
         </p>
       </div>
     </article>

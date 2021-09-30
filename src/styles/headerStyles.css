@@ -34,7 +34,15 @@
   /* margin-right: 161px; */
 }
 
-.loginHeaderButton {
+.logoutheader {
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  color: lightskyblue;
+}
+
+.loginHeaderButton,
+.logoutheader {
   cursor: pointer;
 }
 
